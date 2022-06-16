@@ -63,21 +63,28 @@ a {
 }
 
 .navbar .partes p {
-  margin: 0px 15px;
   font-size: 22px;
   cursor: pointer;
 }
 
 .navbar .partes p span {
   padding: 5px 10px;
-  border-radius: 30px;
   transition: all 0.1s ease-in-out;
+  font-family: bubble-light;
+  letter-spacing: 2px;
+  color: lightgrey;
 }
 
 .navbar .partes p span:hover {
-  background: grey;
-  padding: 5px 10px;
-  border-radius: 30px;
+  color: white;
+}
+
+.nav-bar-inst {
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 /*.navbar .partes i {
@@ -95,12 +102,12 @@ a {
 }*/
 
 .social-buttons {
-  height: 75px;
+  height: 100%;
   width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .s-button {
@@ -111,21 +118,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
+  margin: 0px 5px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.s-button:hover {
-  background: white;
-}
-
 .s-button:hover a i {
-  color: black;
+  color: white;
 }
 
 .s-button a i {
   font-size: 25px;
+  color: lightgrey;
 }
 
 .video {
@@ -265,6 +269,11 @@ a {
   color: white;
   font-size: 30px;
   margin-right: 15px;
+  transition: 0.2s all ease-out;
+}
+
+.contact-box p .fa-envelope:hover {
+  border-radius: 50%;
 }
 
 .contact-box p .etiqueta {
@@ -311,55 +320,69 @@ a {
 
 .footer {
   background: black;
-  height: 300px;
+  height: 250px;
   max-height: 300px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
 }
 
 .footer .f-logo {
+  width: 100%;
+  height: 50%;
   color: white;
   font-size: 40px;
-  padding-left: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.footer .other {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 50px;
+.footer .f-logo h1 {
+  padding-top: 25px;
 }
 
-.footer .other .company h3,
-.footer .other .follow h3 {
+.footer .company h3,
+.footer .follow h3 {
   color: white;
   font-size: 30px;
+  margin-bottom: 15px;
+  font-family: bubble-light;
+  text-transform: capitalize;
+  letter-spacing: 5px;
 }
 
-.footer .other .company {
-  width: 30%;
-  max-height: 100%;
+.footer .company {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer .other .follow {
-  width: 30%;
+.footer .follow {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
 .footer .company .com_parts {
-  margin: 15px;
   color: grey;
+  width: 35%;
 }
 
 .footer .company .com_parts p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-family: bubble-light;
 }
 
 .footer .company .com_parts p:hover {
@@ -374,10 +397,10 @@ a {
   transition: all 0.1s ease-in-out;
   border-radius: 50%;
   cursor: pointer;
+  color: lightgrey;
 }
 
 .footer .follow a i:hover {
-  background: grey;
   color: white;
 }
 
@@ -393,7 +416,8 @@ a {
 
 .copyr p {
   font-size: 17px;
-  margin-bottom: 20px;
   font-family: bubble-light;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
+
