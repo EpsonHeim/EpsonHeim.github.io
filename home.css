@@ -211,14 +211,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.s-servicios-1 .one svg {
-  transition: 0.3s all ease-in-out;
-}
-
-.s-servicios-1 .one svg:hover {
-  transform: scale(1.05);
-}
-
 .s-servicios-1 .one,
 .s-servicios-1 .two {
   width: 100%;
