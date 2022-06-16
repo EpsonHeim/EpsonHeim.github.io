@@ -190,10 +190,47 @@ a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition: all 0.4s ease-in-out;
+  color: white;
+  font-family: bubble-light;
 }
 
 .servicios .serv-h .serv:hover {
   transform: translateY(-3%);
+}
+
+.s-servicios-1 {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: bubble-light;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.s-servicios-1 .one svg {
+  transition: 0.3s all ease-in-out;
+}
+
+.s-servicios-1 .one svg:hover {
+  transform: scale(1.05);
+}
+
+.s-servicios-1 .one,
+.s-servicios-1 .two {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: bubble-light;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacto {
@@ -420,4 +457,3 @@ a {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
