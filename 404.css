@@ -1,0 +1,59 @@
+@font-face {
+  font-family: bubbleboddy;
+  src: url(Bobbleboddy.ttf);
+}
+
+@font-face {
+  font-family: bubble-light;
+  src: url(Bobbleboddy_light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: bubbleboddy;
+}
+
+.error-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 50px;
+}
+
+.error-title h1 {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.error-message {
+  border-right: 3px solid black;
+  padding-right: 30px;
+  justify-content: flex-end;
+  font-family: bubble-light;
+  padding-top: 20px;
+}
+
+.num_error {
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 5px;
+}
+
+.mess_error {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
